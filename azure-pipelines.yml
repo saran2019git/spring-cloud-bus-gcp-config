@@ -8,6 +8,9 @@ trigger:
 
 # pool:
  # vmImage: 'ubuntu-latest'
+container:
+  image: myprivate.azurecr.io/windowsservercore:1803
+  endpoint: my_acr_connection
   
 strategy:
   matrix:
