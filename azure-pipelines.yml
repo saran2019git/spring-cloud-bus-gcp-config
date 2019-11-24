@@ -6,24 +6,24 @@
 trigger:
 - master
   
-# pool:
- # vmImage: 'ubuntu-latest'
-container:
-  image: myprivate.azurecr.io/windowsservercore:1803
-  endpoint: my_acr_connection
+ pool:
+  vmImage: 'ubuntu-latest'
+# container:
+#  image: myprivate.azurecr.io/windowsservercore:1803
+#  endpoint: my_acr_connection
   
-strategy:
-  matrix:
-    linux:
-      imageName: "ubuntu-16.04"
-    mac:
-      imageName: "macos-10.13"
-    windows:
-      imageName: "vs2017-win2016"
-  maxParallel: 3
+# strategy:
+ # matrix:
+  #  linux:
+   #   imageName: "ubuntu-16.04"
+   # mac:
+    #  imageName: "macos-10.13"
+   # windows:
+   #   imageName: "vs2017-win2016"
+  # maxParallel: 3
 
-pool:
-  vmImage: $(imageName)
+# pool:
+ # vmImage: $(imageName)
 
 steps:
 - task: Maven@3
