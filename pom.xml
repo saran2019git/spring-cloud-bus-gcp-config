@@ -50,6 +50,7 @@
         </executions> 
       </plugin>  
       <!-- Azure App Service Plugin -->  
+	  <!--
       <plugin> 
         <groupId>com.microsoft.azure</groupId>  
         <artifactId>azure-webapp-maven-plugin</artifactId>  
@@ -78,6 +79,8 @@
         </configuration>
 		
       </plugin> 
+	  -->
+	  
     </plugins> 
   </build> 
 </project>
